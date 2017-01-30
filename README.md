@@ -23,3 +23,11 @@ You need:
 # Assembly
 
 ![Alt text](/doc/Assembly.jpg?raw=true "Assembly")
+
+# Add environment sensor
+
+You can add sensors on the back, for example, an environment sensor by adding a BME280 which measures temperature, air pressure and humidity (about £3 from [AliExpress](https://www.aliexpress.com/item/BME280-Digital-Sensor-Temperature-Humidity-Barometric-Pressure-Sensor-New/32659765502.html)).
+
+***Note***, the ESP8266 uses about 70mA when running so gets noticably warm, which will effect the readings of any temperature sensor mounted on the back. To avoid that the ESP needs to use deep sleep most of the time and only wake up breifly to send the sensor readings. I've found it needs to deep sleep for at least about 3 minutes per sensor publish to avoid the heat problem.   
+
+![Alt text](/doc/BME280.jpg?raw=true "BME280")
