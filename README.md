@@ -1,8 +1,8 @@
 # How to make a tiny USB powered ESP8266
 
-![Alt text](/doc/IMAG0624a.jpg?raw=true "Tiny USB powered ESP-12S")
+![Alt text](/doc/Running1.jpg?raw=true "Tiny USB powered ESP-12S")
 
-This shows how to make a little USB powered ESP8266 that can run descretly plugged into a USB phone charger, for a cost of just a few pounds.
+This shows how to make a little USB powered ESP8266 that can run descretly plugged into USB socket, such as a USB phone charger or power bank, for a cost of just a few pounds.
 
 Have it running as your own little web server, or add sensors to be a tiny IoT device.  
 
@@ -28,7 +28,7 @@ You need:
 
 ![Alt text](/doc/Assembly.jpg?raw=true "Assembly")
 
-First remove the resistor and three LED's from the USB stick. They come off quite easily heated up with a soldering iron and a small screw driver. The LED's are wired in parallel with all the bottom pads connected to the USB +5V and the left pad of the resistor connected to the USB GND.
+First remove the resistor and three LED's from the USB stick. They come off quite easily heated up with a soldering iron and lifted with a small screw driver. The LED's are wired in parallel with all the bottom pads connected to the USB +5V and the left pad of the resistor connected to the USB GND.
 
 Next solder on the XC6206 regulator. The SOT-89 package format just happens to fit perfectly where the resistor used to be and with the top tag of the regulator on the middle LED pad, with the correct GND and 5V input. A blob of BlueTack helps get it aligned and held in place while you solder it. 
 
