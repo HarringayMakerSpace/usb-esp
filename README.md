@@ -43,3 +43,13 @@ You can add small sensors on the back, for example, make an environment sensor b
 ***Note***, the ESP8266 uses about 70mA when running so gets noticably warm, which will effect the readings of any temperature sensor mounted on the back. To avoid that the ESP needs to use deep sleep most of the time and only wake up breifly to send the sensor readings. I've found it needs to deep sleep for at least about 3 minutes per sensor publish to avoid the heat problem.   
 
 ![Alt text](/doc/BME280.jpg?raw=true "BME280")
+
+# Code
+
+You need to program the ESP8266. Mounted on the USB stick like this it is most convenient to use the Over-The-Air (OTA) programming which enables you to "flash" or re-program it wirelessly. However that does still require initializing the ESP-12 for OTA support ***before*** it is attached to the USB stick.
+
+You need to install the Arduino IDE with ESP8266 support, as described [here](https://github.com/esp8266/Arduino#installing-with-boards-manager).
+
+For the initial code you can just use the BasicOTA sketch that comes as an IDE example. Find that with the IDE menu bar "File -> Examples -> ArduinoOTA -> BasicOTA", and update the sketch with your Wifi netword SSID and password:
+
+![Alt text](/doc/BasicOTA.jpg?raw=true "BasicOTA")
