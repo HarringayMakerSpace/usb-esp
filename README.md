@@ -4,6 +4,8 @@
 
 This shows how to make a little USB powered ESP8266 that can run descretly plugged into a USB phone charger, for a cost of just a few pounds.
 
+Have it running as your own little web server, or add sensors to be a tiny IoT device.  
+
 # What you need
 
 ![Alt text](/doc/IMAG0607a.jpg?raw=true "Parts")
@@ -11,9 +13,11 @@ This shows how to make a little USB powered ESP8266 that can run descretly plugg
 You need:
 
 1. A USB LED Light
+
    You can find these from Internet sellers, eg. [Banggood](http://www.banggood.com/0_2W-WhiteWarm-White-Mini-USB-Mobile-Power-Camping-LED-Light-Lamp-p-969441.html) currently have them for less than 50p when buying 3 or more.
 
 2. An XC6206 3.3V regulator
+
    The SOT-89 package, eg. these for 10 cents each from [AliExpress](https://www.aliexpress.com/item/20pcs-lot-XC6206P332PR-XC6206P332-XC6206-3-3V-SOT-89/32701818048.html)
 
 3. An ESP-12S
@@ -23,6 +27,14 @@ You need:
 # Assembly
 
 ![Alt text](/doc/Assembly.jpg?raw=true "Assembly")
+
+First remove the resistor and three LED's from the USB stick. They come off quite easily heated up with a soldering iron and a small screw driver. The LED's are wired in parallel with all the bottom pads connected to the USB +5V and the left pad of the resistor connected to the USB GND.
+
+Next solder on the XC6206 regulator. The SOT-89 package format just happens to fit perfectly where the resistor used to be and with the top tag of the regulator on the middle LED pad, with the correct GND and 5V input. A blob of BlueTack helps get it aligned and held in place while you solder it. 
+
+Next, turn the USB stick over and with a couple of drops of super glue stick on the ESP-12.
+
+Finally add a short wires from each side of the XC6206 to the bottom pins on each side of the ESP-12 for the GND and +3V connections. Also, if its going to use deepSleep then add the connection between the ESP-12 pins 16 and Reset (thats the small white wire on the top right in the photo, connected to the top right pin and the 4th pin down).  
 
 # Add environment sensor
 
