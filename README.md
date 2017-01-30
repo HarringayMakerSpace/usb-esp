@@ -1,6 +1,6 @@
 # How to make a tiny USB powered ESP8266
 
-![Alt text](/doc/Running1jpg?raw=true "Tiny USB powered ESP-12S")
+![Alt text](/doc/Running1.jpg?raw=true "Tiny USB powered ESP-12S")
 
 This shows how to make a little USB powered ESP8266 that can run descretly plugged into a USB phone charger, for a cost of just a few pounds.
 
