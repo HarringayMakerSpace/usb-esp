@@ -1,4 +1,4 @@
-# How to make a tiny USB powered ESP8266
+# How to make a tiny USB powered WiFi Web Server or IoT Device from an ESP8266/Arduino ESP-12S
 
 ![Alt text](/doc/Running1.jpg?raw=true "Tiny USB powered ESP-12S")
 
