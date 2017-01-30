@@ -4,7 +4,7 @@
 
 This shows how to make a little USB powered ESP8266 that can run descretly plugged into USB socket, such as a USB phone charger or power bank, for a cost of just a few pounds.
 
-Have it running as your own little web server, or add sensors to be a tiny IoT device.  
+Have it running as your own little web server, or add sensors to make a tiny IoT device.  
 
 # What you need
 
@@ -35,6 +35,8 @@ Next solder on the XC6206 regulator. The SOT-89 package format just happens to f
 Next, turn the USB stick over and with a couple of drops of super glue stick on the ESP-12.
 
 Finally add a short wires from each side of the XC6206 to the bottom pins on each side of the ESP-12 for the GND and +3V connections. Also, if its going to use deepSleep then add the connection between the ESP-12 pins 16 and Reset (thats the small white wire on the top right in the photo, connected to the top right pin and the 4th pin down).  
+
+Thats it! You can now plug it into a USB socket it will start running.
 
 # Add environment sensor
 
