@@ -48,10 +48,20 @@ You can add small sensors on the back, for example, make an environment sensor b
 
 # Code
 
-You need to program the ESP8266. Mounted on the USB stick like this it is most convenient to use the Over-The-Air (OTA) programming which enables you to "flash" or re-program it wirelessly. However that does still require initializing the ESP-12 for OTA support ***before*** it is attached to the USB stick.
+You need to program the ESP8266. Mounted on the USB stick like this it is most convenient to use the Over-The-Air (OTA) programming which enables you to "flash" or re-program it wirelessly. However that does still require one first upload over wires to flash it with the OTA sketch.
 
 You need to install the Arduino IDE with ESP8266 support, as described [here](https://github.com/esp8266/Arduino#installing-with-boards-manager).
 
 For the initial code you can just use the BasicOTA sketch that comes as an IDE example. Find that with the IDE menu bar "File -> Examples -> ArduinoOTA -> BasicOTA", and update the sketch with your Wifi netword SSID and password:
 
 ![Alt text](/doc/BasicOTA.jpg?raw=true "BasicOTA")
+
+To wire the bare ESP-12 up for flashing is a bit harder than one on a breakout board but its only six connections, use male jumper wires which you've tinned with solder, and its not too hard with careful soldering to attach the jumper leads to the ESP-12 pads. You need wires on the ESP-12 pins: VCC, GND, TX, RX, RST, and GPIO-0. This is the ESP-12 pinout:
+
+![Alt text](/doc/esp-12.jpg?raw=true "ESP-12")
+
+You connect those to a serial (FTDI) adapter, or if you don't have one of those you can use any ESP8266 development board like a NodeMCU which you've connected CH_EN to GND to disable the ESP8266 on the development board. Here's what that looks like:     
+
+![Alt text](/doc/Flash.jpg?raw=true "Flash Wiring")
+
+(if all that sounds too hard, [buy one of these](http://www.ebay.co.uk/itm/ESP-12-ESP8266-Programmer-Prototyping-Socket-Adapter-for-Arduino-or-Standalone-/282216409723))
