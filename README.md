@@ -46,6 +46,12 @@ You can add small sensors on the back, for example, make an environment sensor b
 
 ![Alt text](/doc/BME280.jpg?raw=true "BME280")
 
+# Or a tiny webserver with 32GB storage
+
+Make a tiny webserver with SD Card storage by adding one of these [Micro SD Card readers](http://www.gearbest.com/development-boards/pp_63013.html) for just £1.
+
+![Alt text](/doc/microsd.jpg?raw=true "ESP with Micro SD")
+
 # Code
 
 You need to program the ESP8266. Mounted on the USB stick like this it is most convenient to use the Over-The-Air (OTA) programming which enables you to "flash" or re-program it wirelessly. However that does still require one first upload over wires to flash it with the OTA sketch.
