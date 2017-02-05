@@ -76,4 +76,4 @@ You connect those to a serial (FTDI) adapter, or if you don't have one of those 
 
 Once you have your ESP-12 flashed with the OTA sketch you can use it how you like, adding sensors etc, and reflashing it with a new updated sketch - but always keep incluing the OTA code part of the sketch so you can always do OTA updates to the code. 
 
-There is an example sketch [here](https://github.com/HarringayMakerSpace/usb-esp/tree/master/UsbEspDevice) for a IoT type device sending sensor readings to ThingSpeak, uses deep sleep, WiFi Manager for network configuration, and ThingSpeak channel metadata for configuration an OTA firmware downloads from an HTTP url.  
+There is an example sketch [here](https://github.com/HarringayMakerSpace/usb-esp/tree/master/UsbEspDevice) for a IoT type device sending sensor readings to ThingSpeak, uses deep sleep, WiFi Manager for network configuration, and ThingSpeak channel metadata for configuration and OTA firmware downloads from an HTTP url.  
