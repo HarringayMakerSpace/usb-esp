@@ -46,6 +46,10 @@ You can add small sensors on the back, for example, make an environment sensor b
 
 ![Alt text](/doc/BME280.jpg?raw=true "BME280")
 
+# Or a simple temperature sensor with a DS18B20
+
+![Alt text](/doc/DS18B20.jpg?raw=true "DS18B20")
+
 # Or a tiny webserver with 32GB storage
 
 Make a tiny webserver with SD Card storage by adding one of these [Micro SD Card readers](http://www.gearbest.com/development-boards/pp_63013.html) for just £1.
