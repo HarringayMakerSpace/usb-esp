@@ -46,6 +46,12 @@ You can add small sensors on the back, for example, make an environment sensor b
 
 ![Alt text](/doc/BME280.jpg?raw=true "BME280")
 
+# Or a tiny webserver with 32GB storage
+
+Make a tiny webserver with SD Card storage by adding one of these [Micro SD Card readers](http://www.gearbest.com/development-boards/pp_63013.html) for just £1.
+
+![Alt text](/doc/microsd.jpg?raw=true "ESP with Micro SD")
+
 # Code
 
 You need to program the ESP8266. Mounted on the USB stick like this it is most convenient to use the Over-The-Air (OTA) programming which enables you to "flash" or re-program it wirelessly. However that does still require one first upload over wires to flash it with the OTA sketch.
@@ -60,7 +66,7 @@ To wire the bare ESP-12 up for flashing is a bit harder than one on a breakout b
 
 ![Alt text](/doc/esp-12.jpg?raw=true "ESP-12")
 
-You connect those to a serial (FTDI) adapter, or if you don't have one of those you can use any ESP8266 development board like a NodeMCU which you've connected CH_EN to GND to disable the ESP8266 on the development board. Here's what that looks like:     
+You connect those to a serial (FTDI) adapter, or if you don't have one of those you can use any ESP8266 development board like a NodeMCU which you've connected CH_EN to GND to disable the ESP8266 on the development board, and then connect the ESP-12 pins (VCC, GND, TX, RX, RST, and GPIO-0) to the same pins on the NodeMCU. Here's what that looks like:     
 
 ![Alt text](/doc/Flash.jpg?raw=true "Flash Wiring")
 
@@ -68,6 +74,6 @@ You connect those to a serial (FTDI) adapter, or if you don't have one of those 
 
 # Example sketch
 
-Once you have your ESP-12 flashed with the OTA sketch you can use it how you like, adding sensors etc, and reflashed it with a new sketch bit always keeping the OTA code part of the sketch so you can always do OTA updates to the code. 
+Once you have your ESP-12 flashed with the OTA sketch you can use it how you like, adding sensors etc, and reflashing it with a new updated sketch - but always keep incluing the OTA code part of the sketch so you can always do OTA updates to the code. 
 
-There is an example sketch [here](https://github.com/HarringayMakerSpace/usb-esp/tree/master/UsbEspDevice) for a IoT type device sending sensor readings to ThingSpeak, uses deep sleep, WiFi Manager for network configuration, and ThingSpeak channel metadata for configuration an OTA firmware downloads.  
+There is an example sketch [here](https://github.com/HarringayMakerSpace/usb-esp/tree/master/UsbEspDevice) for a IoT type device sending sensor readings to ThingSpeak, uses deep sleep, WiFi Manager for network configuration, and ThingSpeak channel metadata for configuration and OTA firmware downloads from an HTTP url.  
