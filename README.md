@@ -24,7 +24,7 @@ You need:
 
    This **must** be the "S" version of the ESP-12. The "S" version has built-in pull-up/down resistors and bypass capacitors so you don't need to add these as external components. Eg. these for £1.89 on [EBay](http://www.ebay.co.uk/itm/New-ESP8266-ESP-12S-Serial-Wireless-WIFI-Transceiver-Sender-Receiver-LWIP-AP-STA-/291971729155)
 
-*** Note: *** I've made a few of these now and have had intermitent problems with one having ocasional crashes on restart/wakeups. After trying a few different USB power supplies I've soldered an addtional 100uF capacitor across the ESP power supply pins and its now been running fine for a couple of months doing restarts once every 15 minutes. So it appears that even with the "S" version of the ESP-12 module the additional bypass capacitor is needed to ensure stability. 
+**Note:** I've made a few of these now and have had intermittent problems with one having occasional crashes on restart/wakeups. After trying a few different USB power supplies I've soldered an additional 100uF capacitor across the ESP power supply pins and its now been running fine for a couple of months doing restarts once every 15 minutes. So it appears that even with the "S" version of the ESP-12 module the additional bypass capacitor is needed to ensure stability. 
 
 # Assembly
 
