@@ -68,7 +68,7 @@ For the initial code you can just use the BasicOTA sketch that comes as an IDE e
 
 ![Alt text](/doc/BasicOTA.jpg?raw=true "BasicOTA")
 
-To wire the bare ESP-12 up for flashing is a bit harder than one on a breakout board but its only six connections, use male jumper wires which you've tinned with solder, and its not too hard with careful soldering to attach the jumper leads to the ESP-12 pads. You need wires on the ESP-12 pins: VCC, GND, TX, RX, RST, and GPIO-0. This is the ESP-12 pinout:
+To wire the bare ESP-12 up for flashing is a bit harder than one on a breakout board but its only six connections. Hold the bare ESP-12s in place with a blob of blutack and use male jumper wires which you've tinned with solder, and its not too hard with careful soldering to attach the jumper leads to the ESP-12 pads. You can use the UART chip from another dev module to program it - you need wires on the ESP-12 pins: VCC, GND, TX, RX, RST, and GPIO-0. This is the ESP-12 pinout:
 
 ![Alt text](/doc/esp-12.jpg?raw=true "ESP-12")
 
