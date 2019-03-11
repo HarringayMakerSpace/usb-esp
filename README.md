@@ -16,10 +16,10 @@ You need:
 
    You can find these from Internet sellers, eg. [Banggood](http://www.banggood.com/0_2W-WhiteWarm-White-Mini-USB-Mobile-Power-Camping-LED-Light-Lamp-p-969441.html) currently have them for less than 50p when buying 3 or more.
 
-2. An XC6206 3.3V regulator
+2. A 3.3V regulator, eg HT7833
 
-   The SOT-89 package, eg. these for 10 cents each from [AliExpress](https://www.aliexpress.com/item/20pcs-lot-XC6206P332PR-XC6206P332-XC6206-3-3V-SOT-89/32701818048.html)
-
+   The SOT-89 package has the correct pinout for this
+   
 3. An ESP-12S
 
    This **must** be the "S" version of the ESP-12. The "S" version has built-in pull-up/down resistors and bypass capacitors so you don't need to add these as external components. Eg. these for £1.89 on [EBay](http://www.ebay.co.uk/itm/New-ESP8266-ESP-12S-Serial-Wireless-WIFI-Transceiver-Sender-Receiver-LWIP-AP-STA-/291971729155)
